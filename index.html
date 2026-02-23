@@ -4,15 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kedai Ocik | Masakan Melayu & Sembako</title>
+    <title>Kedai Ocik | Warisan Cita Rasa Melayu Premium</title>
     <meta name="description"
-        content="Kedai Ocik menjual berbagai masakan catering halal khas Melayu dan kebutuhan sembako sehari-hari. Dikelola oleh Mamak bersama 3 Jagoan.">
+        content="Kedai Ocik menghadirkan kelezatan masakan Melayu otentik dari resep warisan keluarga, serta menyediakan kebutuhan pokok harian pilihan.">
 
-    <!-- Google Fonts -->
+    <!-- Google Fonts: Playfair Display (Elegant Serif) & Outfit (Modern Sans) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap"
         rel="stylesheet">
 
     <!-- Font Awesome -->
@@ -24,16 +24,17 @@
 <body>
 
     <!-- Navbar -->
-    <nav class="navbar">
+    <nav class="navbar" id="navbar">
         <div class="nav-container">
             <a href="#" class="logo">
                 <img src="logo.jpg" alt="Logo Kedai Ocik" class="logo-img">
+                <span class="logo-text">KEDAI OCIK</span>
             </a>
             <div class="nav-links">
                 <a href="#beranda">Beranda</a>
-                <a href="#tentang">Tentang</a>
+                <a href="#kisah">Kisah Kami</a>
                 <a href="#layanan">Layanan</a>
-                <a href="#kontak" class="btn-nav">Pesan Sekarang</a>
+                <a href="#kontak" class="btn-nav">Reservasi & Pesan</a>
             </div>
             <div class="mobile-menu-btn">
                 <i class="fa-solid fa-bars"></i>
@@ -43,62 +44,58 @@
 
     <!-- Hero Section -->
     <section id="beranda" class="hero">
+        <div class="hero-overlay"></div>
         <div class="hero-content fade-up">
-            <span class="badge">Spesial Masakan Padang & Melayu</span>
-            <h1>Cita Rasa Khas Melayu dari Dapur Mamak</h1>
-            <p>Menyajikan masakan catering halal yang kaya rempah dan penuh cinta. Kami juga menyediakan aneka kebutuhan
-                sembako harian untuk keluarga Anda.</p>
+            <span class="badge">Eksklusivitas Rasa & Tradisi</span>
+            <h1>Warisan Cita Rasa Melayu Sejati</h1>
+            <p>Menghadirkan mahakarya kuliner dari resep rahasia keluarga yang diolah dengan dedikasi tinggi. Temukan
+                kemewahan rasa dalam setiap hidangan kami.</p>
             <div class="hero-buttons">
-                <a href="#layanan" class="btn btn-primary">Lihat Menu <i class="fa-solid fa-arrow-right"></i></a>
-                <a href="#tentang" class="btn btn-secondary">Cerita Kami</a>
-            </div>
-        </div>
-        <div class="hero-image fade-up">
-            <div class="image-wrapper">
-                <!-- Using a placeholder pattern that looks beautiful -->
-                <img src="https://images.unsplash.com/photo-1604328698692-f76ea9498e76?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                    alt="Masakan Khas Melayu">
-                <div class="floating-badge">
-                    <i class="fa-solid fa-star"></i>
-                    <span>100% Halal & Higienis</span>
-                </div>
+                <a href="#layanan" class="btn btn-primary">Eksplorasi Menu</a>
+                <a href="#kisah" class="btn btn-outline">Filosofi Kami</a>
             </div>
         </div>
     </section>
 
     <!-- About Section -->
-    <section id="tentang" class="about">
+    <section id="kisah" class="about">
         <div class="about-container">
-            <div class="about-text fade-up">
-                <h2>Cerita <span>Kedai Ocik</span></h2>
-                <h3 class="subtitle">Mamak & 3 Jagoan</h3>
-                <p>Berawal dari resep rahasia keluarga yang turun-temurun, <strong>Kedai Ocik</strong> didirikan dengan
-                    semangat untuk menghadirkan makanan lezat nan bergizi bagi semua orang.</p>
-                <p>Dikelola langsung oleh tangan terampil <em>Mamak</em> dan dibantu oleh <strong>3 Jagoannya</strong>
-                    yang selalu sigap, kami tidak hanya menyajikan masakan catering khas Melayu yang menggugah selera,
-                    tapi juga menyediakan toko sembako kecil-kecilan untuk memenuhi kebutuhan harian tetangga dan warga
-                    sekitar.</p>
-
-                <div class="features">
-                    <div class="feature">
-                        <i class="fa-solid fa-fire-burner"></i>
-                        <div>
-                            <h4>Resep Asli</h4>
-                            <p>Bumbu rempah pilihan</p>
-                        </div>
-                    </div>
-                    <div class="feature">
-                        <i class="fa-solid fa-hand-holding-heart"></i>
-                        <div>
-                            <h4>Sembako Lengkap</h4>
-                            <p>Kebutuhan harian UMKM</p>
-                        </div>
+            <div class="about-image fade-up">
+                <div class="image-frame">
+                    <img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                        alt="Dapur Klasik Kedai Ocik">
+                    <div class="experience-badge">
+                        <span class="number">100%</span>
+                        <span class="text">Resep<br>Otentik</span>
                     </div>
                 </div>
             </div>
-            <div class="about-image fade-up">
-                <img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                    alt="Dapur Kedai Ocik">
+            <div class="about-text fade-up">
+                <h4 class="section-subtitle">Kisah Kedai Ocik</h4>
+                <h2>Sebuah Perjalanan Rasa dari <span>Dapur Mamak</span></h2>
+                <div class="divider"></div>
+                <p>Didirikan dengan filosofi bahwa makanan terbaik selalu lahir dari hati, <strong>Kedai Ocik</strong>
+                    merupakan perwujudan cinta seorang ibu (Mamak) melalui hidangan.</p>
+                <p>Bersama 3 Jagoannya, Mamak menjaga ketat keaslian bumbu dan metode memasak tradisional Melayu. Kami
+                    percaya bahwa setiap suapan adalah jembatan menuju kenangan hangat akan kampung halaman. Lebih dari
+                    sekadar kedai, kami juga melayani kebutuhan pokok warga sekitar dengan penuh kehangatan.</p>
+
+                <div class="features">
+                    <div class="feature">
+                        <div class="feature-icon"><i class="fa-solid fa-leaf"></i></div>
+                        <div>
+                            <h4>Bahan Pilihan Berkualitas</h4>
+                            <p>Kesegaran yang terjamin setiap harinya.</p>
+                        </div>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon"><i class="fa-solid fa-crown"></i></div>
+                        <div>
+                            <h4>Standar Higienis Premium</h4>
+                            <p>Kebersihan adalah prioritas tertinggi kami.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -106,28 +103,28 @@
     <!-- Services Section -->
     <section id="layanan" class="services">
         <div class="section-header fade-up">
-            <h2>Layanan Kami</h2>
-            <p>Apa saja yang ada di Kedai Ocik?</p>
+            <h4 class="section-subtitle">Layanan Eksklusif</h4>
+            <h2>Dedikasi Kami Untuk Anda</h2>
+            <div class="divider center"></div>
         </div>
 
         <div class="services-grid">
             <!-- Catering Card -->
             <div class="service-card fade-up">
                 <div class="card-img"
-                    style="background-image: url('https://images.unsplash.com/photo-1626804475297-41609ea0eb49?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80');">
+                    style="background-image: url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');">
                 </div>
                 <div class="card-content">
                     <div class="card-icon">
-                        <i class="fa-solid fa-utensils"></i>
+                        <i class="fa-solid fa-bell-concierge"></i>
                     </div>
-                    <h3>Catering Masakan Melayu</h3>
-                    <p>Menerima pesanan catering rantangan, nasi kotak, hingga acara syukuran. Menu andalan kami
-                        meliputi Rendang Daging, Asam Pedas Ikan, Gulai Ayam, dan aneka sambal khas yang bikin nagih.
-                    </p>
+                    <h3>Katering Premium Melayu</h3>
+                    <p>Layanan katering berkelas untuk segala momen istimewa Anda. Nikmati sajian legendaris seperti
+                        Rendang Daging Slow-Cooked, Asam Pedas Ikan Segar, dan Gulai Ayam Kaya Rempah.</p>
                     <ul class="menu-list">
-                        <li><i class="fa-solid fa-check"></i> Higienis & Halal</li>
-                        <li><i class="fa-solid fa-check"></i> Bebas bahan pengawet</li>
-                        <li><i class="fa-solid fa-check"></i> Harga bersahabat</li>
+                        <li><i class="fa-solid fa-check-double"></i> Penyajian Elegan & Higienis</li>
+                        <li><i class="fa-solid fa-check-double"></i> Tanpa Pengawet Buatan</li>
+                        <li><i class="fa-solid fa-check-double"></i> Kustomisasi Menu Acara</li>
                     </ul>
                 </div>
             </div>
@@ -135,19 +132,19 @@
             <!-- Sembako Card -->
             <div class="service-card fade-up">
                 <div class="card-img"
-                    style="background-image: url('https://images.unsplash.com/photo-1583258292688-d0213dc5a3a8?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80');">
+                    style="background-image: url('https://images.unsplash.com/photo-1542838132-92c53300491e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');">
                 </div>
                 <div class="card-content">
                     <div class="card-icon">
-                        <i class="fa-solid fa-basket-shopping"></i>
+                        <i class="fa-solid fa-shop"></i>
                     </div>
-                    <h3>Toko Sembako harian</h3>
-                    <p>Memenuhi kebutuhan pangan harian Anda dengan harga terjangkau. Warung sembako Kedai Ocik siap
-                        melayani warga sekitar dengan senyuman dari 3 Jagoan.</p>
+                    <h3>Kebutuhan Pokok Terpilih</h3>
+                    <p>Selain hidangan lezat, kami menyediakan kurasi kebutuhan pokok harian. Kami memastikan setiap
+                        beras, minyak, hingga bumbu dapur merupakan produk berkualitas terbaik.</p>
                     <ul class="menu-list">
-                        <li><i class="fa-solid fa-check"></i> Beras & Minyak Goreng</li>
-                        <li><i class="fa-solid fa-check"></i> Bumbu Dapur Segar</li>
-                        <li><i class="fa-solid fa-check"></i> Kebutuhan Rumah Tangga</li>
+                        <li><i class="fa-solid fa-check-double"></i> Beras Premium & Sembako</li>
+                        <li><i class="fa-solid fa-check-double"></i> Rempah Dapur Segar</li>
+                        <li><i class="fa-solid fa-check-double"></i> Layanan Ramah Tamah</li>
                     </ul>
                 </div>
             </div>
@@ -156,12 +153,14 @@
 
     <!-- CTA / Contact -->
     <section id="kontak" class="cta">
+        <div class="cta-overlay"></div>
         <div class="cta-content fade-up">
-            <h2>Siap Pesan Masakan Mamak?</h2>
-            <p>Atau ada kebutuhan sembako yang mau dibeli? Jangan ragu untuk menghubungi kami via WhatsApp. Kami siap
-                melayani dengan cepat!</p>
+            <img src="logo.jpg" alt="Logo Kedai Ocik" class="cta-logo">
+            <h2>Hadirkan Kemewahan Cita Rasa di Meja Anda</h2>
+            <p>Mari diskusikan kebutuhan katering acara Anda bersama kami, atau sampaikan daftar pesanan kebutuhan
+                harian Anda. 3 Jagoan siap memberikan pelayanan terbaik.</p>
             <a href="https://chat.whatsapp.com/FnhJbgIUrsaETcGJWbVwMP" target="_blank" class="btn btn-whatsapp">
-                <i class="fa-brands fa-whatsapp"></i> Hubungi 3 Jagoan via WhatsApp
+                <i class="fa-brands fa-whatsapp"></i> Hubungi Concierge Kami
             </a>
         </div>
     </section>
@@ -170,23 +169,28 @@
     <footer>
         <div class="footer-content">
             <div class="footer-brand">
-                <img src="logo.jpg" alt="Logo Kedai Ocik" class="footer-logo">
-                <p>Masakan Khas Melayu & Sembako Lengkap. Dikelola oleh Mamak bersama 3 Jagoan.</p>
+                <div class="footer-brand-header">
+                    <img src="logo.jpg" alt="Logo Kedai Ocik" class="footer-logo">
+                    <h3>KEDAI OCIK</h3>
+                </div>
+                <p>Kedai Ocik merepresentasikan dedikasi Mamak & 3 Jagoan dalam melestarikan warisan rasa dan melayani
+                    dengan sepenuh hati.</p>
             </div>
             <div class="footer-links">
-                <h4>Menu</h4>
+                <h4>Navigasi</h4>
                 <a href="#beranda">Beranda</a>
-                <a href="#tentang">Cerita Kami</a>
-                <a href="#layanan">Layanan</a>
+                <a href="#kisah">Kisah Kami</a>
+                <a href="#layanan">Layanan Eksklusif</a>
             </div>
             <div class="footer-contact">
-                <h4>Kontak</h4>
-                <p><i class="fa-solid fa-phone"></i> +62 831-4753-6110</p>
-                <p><i class="fa-solid fa-location-dot"></i> Kedai Kami (Silakan mampir!)</p>
+                <h4>Informasi Kontak</h4>
+                <p><i class="fa-solid fa-phone-volume"></i> +62 831-4753-6110</p>
+                <p><i class="fa-solid fa-envelope-open-text"></i> Pesan via WhatsApp</p>
+                <p><i class="fa-solid fa-map-location-dot"></i> Kunjungi Kedai Kami</p>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; <span id="year"></span> Kedai Ocik. Dibuat dengan cinta. (Di-hosting di kedai-ocik.biz.id)</p>
+            <p>&copy; <span id="year"></span> Kedai Ocik. Hak Cipta Dilindungi.</p>
         </div>
     </footer>
 

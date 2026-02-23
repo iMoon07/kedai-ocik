@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     // 1. Update Copyright Year Automatically
     const yearSpan = document.getElementById('year');
-    if(yearSpan) {
+    if (yearSpan) {
         yearSpan.textContent = new Date().getFullYear();
     }
 
@@ -9,13 +9,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const mobileBtn = document.querySelector('.mobile-menu-btn');
     const navLinks = document.querySelector('.nav-links');
 
-    if(mobileBtn && navLinks) {
+    if (mobileBtn && navLinks) {
         mobileBtn.addEventListener('click', () => {
             navLinks.classList.toggle('active');
-            
+
             // Toggle icon from bars to X
             const icon = mobileBtn.querySelector('i');
-            if(navLinks.classList.contains('active')){
+            if (navLinks.classList.contains('active')) {
                 icon.classList.remove('fa-bars');
                 icon.classList.add('fa-xmark');
             } else {
@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const links = document.querySelectorAll('.nav-links a');
     links.forEach(link => {
         link.addEventListener('click', () => {
-            if(navLinks.classList.contains('active')){
+            if (navLinks.classList.contains('active')) {
                 navLinks.classList.remove('active');
                 const icon = mobileBtn.querySelector('i');
                 icon.classList.remove('fa-xmark');
@@ -41,12 +41,15 @@ document.addEventListener('DOMContentLoaded', () => {
     // 3. Navbar scroll effect
     const navbar = document.querySelector('.navbar');
     window.addEventListener('scroll', () => {
-        if(window.scrollY > 50) {
-            navbar.style.boxShadow = '0 10px 30px rgba(0,0,0,0.1)';
-            navbar.style.padding = '10px 0';
+        if (window.scrollY > 50) {
+            navbar.classList.add('scrolled');
+            // Remove inline styles to let CSS take control
+            navbar.style.boxShadow = '';
+            navbar.style.padding = '';
         } else {
-            navbar.style.boxShadow = '0 4px 6px rgba(0,0,0,0.05)';
-            navbar.style.padding = '15px 0';
+            navbar.classList.remove('scrolled');
+            navbar.style.boxShadow = '';
+            navbar.style.padding = '';
         }
     });
 
@@ -61,7 +64,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const fadeObserver = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
-            if(entry.isIntersecting) {
+            if (entry.isIntersecting) {
                 entry.target.classList.add('visible');
                 observer.unobserve(entry.target); // Stop observing once visible
             }
