@@ -134,8 +134,9 @@ a {
 }
 
 .logo-img {
-    height: 48px;
+    height: 50px;
     width: auto;
+    object-fit: contain;
     border-radius: 8px;
     box-shadow: var(--shadow-sm);
     transition: var(--transition);
