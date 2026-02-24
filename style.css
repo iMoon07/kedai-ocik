@@ -741,6 +741,10 @@ footer {
         display: block;
     }
 
+    .hero-content {
+        padding-top: 80px;
+    }
+
     .navbar {
         padding: 15px 0;
         background-color: rgba(25, 25, 25, 0.9);
